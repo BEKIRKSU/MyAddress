@@ -35,11 +35,11 @@ label .menu {
     z-index: 100;
     width: 200px;
     height: 200px;
-    background: #FFF;
+    background: #062930;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    box-shadow: 0 0 0 0 #062930, 0 0 0 0 #062930;
     cursor: pointer;
 
 }
@@ -83,7 +83,7 @@ label input {
 }
 
 label input:checked+.menu {
-    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    box-shadow: 0 0 0 100vw #062930, 0 0 0 100vh #062930;
     border-radius: 0;
 
 }
