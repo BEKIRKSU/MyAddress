@@ -15,6 +15,23 @@ a {
     text-decoration: none;
 }
 
+.hamburger-menu {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: right;
+}
+.hamburger-menu-hamburger {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+}
+
 /* Sections */
 .section {
     height: 200px;
