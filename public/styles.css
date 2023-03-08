@@ -9,6 +9,20 @@
 body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
+    background-color: #d4fef2;
+    background-size: 100% 200%;
+    background-position: center top;
+    animation: gradientAnimation 3s ease-in-out;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: center top;
+    }
+
+    100% {
+        background-position: center bottom;
+    }
 }
 
 a {
@@ -22,15 +36,17 @@ a {
     width: 40px;
     height: 40px;
     text-align: right;
-}
+    color: #062930;
+    text-shadow: 0 20px 40px rgba(0, 0, 0, .5);
+    }
+
 .hamburger-menu-hamburger {
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 10px;
-    height: 10px;
-}
+    }
 
 /* Sections */
 .section {
@@ -114,7 +130,7 @@ a {
 
 .content-theme-light h1 {
     color: #062930;
-    text-shadow: 0 20px 40px rgba(0, 0, 0, .5);
+    text-shadow: 0 10px 40px rgba(0, 0, 0, .5);
 }
 
 .content-theme-light p,
