@@ -18,7 +18,7 @@ a {
 /* Sections */
 .section {
     height: 200px;
-    min-height: 300px;
+    min-height: 200px;
     position: relative;
 }
 
@@ -36,7 +36,7 @@ a {
 
 .content-inner {
     position: fixed;
-    top: 75px;
+    top: 25px;
     left: 0;
     right: 0;
     height: 50%;
@@ -71,7 +71,7 @@ a {
 }
 
 .section h1 {
-    font-size: 200px;
+    font-size: 50px;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
