@@ -33,7 +33,7 @@ a {
 
 label .menu {
     position: absolute;
-    left: 1320px;
+    left: 1223px;
     top: -100px;
     z-index: 100;
     width: 200px;
@@ -49,7 +49,7 @@ label .menu {
 label .hamburger {
     position: absolute;
     top: 135px;
-    left: 50px;
+    left: 80px;
     width: 30px;
     height: 2px;
     background: #d4fef2;
