@@ -12,6 +12,9 @@ body {
     background-color: #d4fef2;
     background-size: 100% 200%;
     background-position: center top;
+    max-width: 1000px;
+    margin: 0 auto;
+
 }
 /* 
 @keyframes gradientAnimation {
@@ -30,7 +33,7 @@ a {
 
 label .menu {
     position: absolute;
-    right: -100px;
+    left: 1320px;
     top: -100px;
     z-index: 100;
     width: 200px;
@@ -41,7 +44,6 @@ label .menu {
     transition: .5s ease-in-out;
     box-shadow: 0 0 0 0 #062930, 0 0 0 0 #062930;
     cursor: pointer;
-
 }
 
 label .hamburger {
