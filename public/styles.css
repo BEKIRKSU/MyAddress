@@ -12,9 +12,8 @@ body {
     background-color: #d4fef2;
     background-size: 100% 200%;
     background-position: center top;
-    animation: gradientAnimation 3s ease-in-out;
 }
-
+/* 
 @keyframes gradientAnimation {
     0% {
         background-position: center top;
@@ -23,7 +22,7 @@ body {
     100% {
         background-position: center bottom;
     }
-}
+} */
 
 a {
     text-decoration: none;
