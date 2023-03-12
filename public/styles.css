@@ -129,7 +129,8 @@ label ul {
 label a {
     margin-bottom: 1em;
     display: block;
-    color: #d4fef2;
+    /* color: #d4fef2; */
+    color: #f7f7f7;
     text-decoration: none;
 }
 
@@ -231,4 +232,13 @@ font-family: 'Raleway', sans-serif;
     text-shadow: 0 10px 40px rgba(2, 2, 2, .9);
    margin-right: 300px;
 
+}
+
+.img-house {
+    height: auto;
+    width: auto;
+    margin-left: 700px;
+    opacity: 0.2;
+    outline: none;
+    margin-bottom: 400px;
 }
