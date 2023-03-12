@@ -222,3 +222,13 @@ label a {
 .content-theme-light a {
     color: #728E93;
 }
+
+.body-content {
+    margin-top: 150px;
+    font-size: 40px;
+   font-weight: 700 ;
+font-family: 'Raleway', sans-serif;
+    text-shadow: 0 10px 40px rgba(2, 2, 2, .9);
+   margin-right: 300px;
+
+}
