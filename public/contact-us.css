@@ -9,7 +9,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background: var(--gray-12);
+  background: #062930;
 }
 
 ul {
