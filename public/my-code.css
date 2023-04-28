@@ -5,6 +5,7 @@ main {
 }
 
 form {
+  
     width: 90vw;
     max-width: 20em;
     background-color: #d4fef2;
@@ -18,6 +19,9 @@ form {
     font-family: 'Raleway', sans-serif;
   }
   
+  .wrapper {
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+  }
   
   input {
     border: 1px solid;
