@@ -180,7 +180,7 @@ label a {
 }
 
 
-/* Aesthetics */
+
 .top-section {
     background: linear-gradient(135deg, #f4583a 0%, #cd1e38 100%);
 }
@@ -203,6 +203,7 @@ label a {
     text-transform: uppercase;
     text-align: center;
 }
+
 
 .content-theme-dark h1 {
     color: #E33E39;
@@ -242,3 +243,4 @@ font-family: 'Raleway', sans-serif;
     outline: none;
     margin-bottom: 400px;
 }
+
