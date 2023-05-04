@@ -1,11 +1,7 @@
-@import url(https://unpkg.com/open-props/open-props.min.css);
-  @import url(https://unpkg.com/open-props/normalize.min.css);
+/* @import url(https://unpkg.com/open-props/open-props.min.css);
+  @import url(https://unpkg.com/open-props/normalize.min.css); */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
+.contact {
   display: grid;
   place-items: center;
   min-height: 100vh;
