@@ -6,7 +6,7 @@ function MyForm() {
 
   
     return (
-      <main>
+      <main className='myform'>
     <div class="wrapper">
       <form>
         <div>
