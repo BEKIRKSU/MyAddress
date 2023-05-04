@@ -1,46 +1,9 @@
-import { formData } from '../../myList';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import "../form/my-code.css"
 
 function MyForm() {
-    const [formData, setFormData] = useState({
-      name: '',
-      address: ''
-    });
-    const [submissions, setSubmissions] = useState([]);
-  
-    useEffect(() => {
-      const storedSubmissions = localStorage.getItem('submissions');
-      if (storedSubmissions) {
-        setSubmissions(JSON.parse(storedSubmissions));
-      }
-    }, []);
-  
-    const generateCode = () => {
-        const chars = '0123456789abcdefghijklmnopqrstuvwxyz';
-        let code = '';
-        for (let i = 0; i < 11; i++) {
-          code += chars[Math.floor(Math.random() * chars.length)].toUpperCase();
-        }
-        return code;
-      };
-  
-    const handleChange = (event) => {
-      setFormData({
-        ...formData,
-        [event.target.name]: event.target.value
-      });
-    };
-  
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const code = generateCode();
-        const newSubmission = { ...formData, code };
-        setSubmissions([...submissions, newSubmission]);
-        localStorage.setItem('submissions', JSON.stringify([...submissions, newSubmission]));
-        setFormData({ name: '', address: '' });
-      };
+
   
     return (
       <main>
