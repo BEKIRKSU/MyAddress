@@ -1,19 +1,17 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="my-code.css" />
-    <title>Document</title>
-</head>
-<body>
+import React from 'react';
 
-<main>
+import "../form/my-code.css"
+
+function MyForm() {
+
+  
+    return (
+      <main>
     <div class="wrapper">
       <form>
         <div>
           <label for="name">Name</label>
-          <input required type="text" id="name" name="name" autocomplete="name" enterkeyhint="next">
+          <input required type="text" id="name" name="name" autocomplete="name" enterkeyhint="next"/>
         </div>
         <div>
           <label for="street-address">Street address</label>
@@ -22,11 +20,11 @@
         </div>
         <div>
           <label for="postal-code">ZIP or postal code (optional)</label>
-          <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next">
+          <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next"/>
         </div>
         <div>
           <label for="city">City</label>
-          <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next">
+          <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next"/>
         </div>
         <div>
           <label for="country">Country or region</label>
@@ -287,6 +285,7 @@
       </form>
     </div>
   </main>
-
-</body>
-</html>
+    );
+  }
+  
+  export default MyForm;
