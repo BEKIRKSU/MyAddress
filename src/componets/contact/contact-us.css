@@ -1,7 +1,7 @@
 /* @import url(https://unpkg.com/open-props/open-props.min.css);
   @import url(https://unpkg.com/open-props/normalize.min.css); */
 
-.contact {
+/* .contact {
   display: grid;
   place-items: center;
   min-height: 100vh;
@@ -92,4 +92,4 @@ a:focus-visible {
 
 ul:is(:focus-within, :hover) {
   --active: 1;
-}
+} */
