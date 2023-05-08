@@ -1,14 +1,14 @@
 /* @import url(https://unpkg.com/open-props/open-props.min.css);
-  @import url(https://unpkg.com/open-props/normalize.min.css); */
+  @import url(https://unpkg.com/open-props/normalize.min.css); */ */
 
-/* .contact {
+ .contact {
   display: grid;
   place-items: center;
   min-height: 100vh;
   background: #062930;
 }
 
-ul {
+/* ul {
   padding: 0;
   display: inline-grid;
   grid-auto-flow: column;
@@ -17,10 +17,10 @@ ul {
   transition: grid-template-columns 0.35s var(--ease-elastic-1);
 }
 
-main {
+/* main {
   width: 66ch;
-}
-
+} */
+/* 
 li {
   display: grid;
   justify-content: end;
@@ -92,4 +92,4 @@ a:focus-visible {
 
 ul:is(:focus-within, :hover) {
   --active: 1;
-} */
+} */ 
