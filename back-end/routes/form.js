@@ -4,9 +4,9 @@ function formRoute(app){
   app.post('/saveData', (req, res) => {
     const formData = req.body;
     const { name, streetAddress, postalCode, city, country } = formData;
-
+    //change database name addresses
     const queryString = `
-      INSERT INTO addresses (name, street_address, postal_code, city, country)
+      INSERT INTO myaddress (name, street_address, postal_code, city, country)
       VALUES ($1, $2, $3, $4, $5)
     `;
 
@@ -24,7 +24,7 @@ function formRoute(app){
 
   app.get('/mycode', (req, res) => {
     const queryString = `
-      SELECT * FROM addresses
+      SELECT * FROM myaddress
     `;
 
     db.query(queryString)
