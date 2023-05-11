@@ -1,12 +1,12 @@
 const db = require("../db/db");
 
 function formRoute(app){
-  app.post('/saveData', (req, res) => {
+  app.post('/mycode', (req, res) => {
     const formData = req.body;
     const { name, streetAddress, postalCode, city, country } = formData;
     //change database name addresses
     const queryString = `
-      INSERT INTO myaddress (name, street_address, postal_code, city, country)
+      INSERT INTO form_data (name, street_address, postal_code, city, country)
       VALUES ($1, $2, $3, $4, $5)
     `;
 
@@ -22,20 +22,31 @@ function formRoute(app){
       });
   });
 
-  app.get('/mycode', (req, res) => {
-    const queryString = `
-      SELECT * FROM myaddress
-    `;
+//---------------------------------------------------
 
-    db.query(queryString)
-      .then((result) => {
-        res.status(200).send(result.rows);
-      })
-      .catch((err) => {
-        console.error(err);
-        res.status(500).send("Failed to retrieve data.");
-      });
-  });
+
+//---------------------------------------------------
+
+
+app.get('/mycode', (req, res) => {
+  const queryString = `
+    SELECT * FROM form_data
+  `;
+
+  console.log("Executing query:", queryString);
+
+  db.query(queryString)
+    .then((result) => {
+      console.log("Query result:", result.rows);
+      res.status(200).send(result.rows);
+    })
+    .catch((err) => {
+      console.error("Query error:", err);
+      res.status(500).send("Failed to retrieve data from the database.");
+    });
+});
+
+  
 }
 
 module.exports = formRoute;

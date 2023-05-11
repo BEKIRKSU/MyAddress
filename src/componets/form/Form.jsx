@@ -19,16 +19,18 @@ function MyForm() {
     }));
   };
 
+  axios.defaults.withCredentials = true;
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     try {
-      const response = await axios.post('/api/saveData', formData);
-
+      const response = await axios.post('http://localhost:3000/mycode', formData);
+  
       if (response.status !== 200) {
         throw new Error('Failed to save data.');
       }
-
+  
       // Reset the form
       setFormData({
         name: '',
@@ -37,7 +39,7 @@ function MyForm() {
         city: '',
         country: ''
       });
-
+  
       alert('Data saved successfully!');
     } catch (error) {
       alert(error.message);
