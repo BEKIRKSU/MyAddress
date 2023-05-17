@@ -1,30 +1,26 @@
 const db = require("../db/db");
+const { createHash } = require('crypto');
 
-function formRoute(app){
+
+
+function formRoute(app) {
   app.post('/mycode', (req, res) => {
     const formData = req.body;
     const { name, streetAddress, postalCode, city, country } = formData;
   
-    // Convert the fields to hex codes
-    const nameHex = Buffer.from(name, 'utf-8').toString('hex');
-    const streetAddressHex = Buffer.from(streetAddress, 'utf-8').toString('hex');
-    const postalCodeHex = Buffer.from(postalCode, 'utf-8').toString('hex');
-    const cityHex = Buffer.from(city, 'utf-8').toString('hex');
-    const countryHex = Buffer.from(country, 'utf-8').toString('hex');
+    // Hash and truncate the form data fields to 7 characters
+    const fullAddress = streetAddress + postalCode + city + country;
+    const fullDetails = createHash('sha256').update(name + fullAddress).digest('hex').slice(0, 11).toUpperCase();
+  
+    // Combine the hashed values into a single code
+    const mycode = `${fullDetails}`;
   
     const queryString = `
       INSERT INTO form_data (name, street_address, postal_code, city, country, mycode)
       VALUES ($1, $2, $3, $4, $5, $6)
     `;
   
-    const values = [
-      name,
-      streetAddress,
-      postalCode,
-      city,
-      country,
-      nameHex + streetAddressHex + postalCodeHex + cityHex + countryHex
-    ];
+    const values = [name, streetAddress, postalCode, city, country, mycode];
   
     db.query(queryString, values)
       .then(() => {
@@ -35,7 +31,8 @@ function formRoute(app){
         res.status(500).send("Failed to save data.");
       });
   });
-  
+
+
   app.get('/thank-you', (req, res) => {
     const queryString = `SELECT mycode FROM form_data ORDER BY id DESC LIMIT 1`;
   
