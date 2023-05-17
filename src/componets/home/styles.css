@@ -221,8 +221,8 @@ label a {
 }
 
 .body-content {
-    margin-top: 150px;
-    font-size: 40px;
+    margin-top: 10px;
+    font-size: 10px;
    font-weight: 700 ;
 font-family: 'Raleway', sans-serif;
     text-shadow: 0 10px 40px rgba(2, 2, 2, .9);
