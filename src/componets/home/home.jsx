@@ -44,6 +44,7 @@ function Home() {
           <div className="content-section-1-punchline"></div>
           <div className="body-content">
             <h1>A Revolutionary, Safe and Private strucutre to deliveries. There are over 450million deliveries per year. </h1>
+            <img src="MyProject-1.jpg" alt="Envelope with MyAddressCode"/>
           </div>
         </section>
       </main>
