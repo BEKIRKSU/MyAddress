@@ -43,7 +43,7 @@ function Home() {
         <section className="content-section-1">
           <div className="content-section-1-punchline"></div>
           <div className="body-content">
-            <h1>How many people/businesses have my address?</h1>
+            <h1>A Revolutionary, Safe and Private strucutre to deliveries. There are over 450million deliveries per year. </h1>
           </div>
         </section>
       </main>
