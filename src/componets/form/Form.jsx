@@ -13,25 +13,20 @@ function MyForm() {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
+    setFormData(prevState => ({ ...prevState, [name]: value }));
   };
 
   axios.defaults.withCredentials = true;
-  
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-  
+
     try {
       const response = await axios.post('http://localhost:3000/mycode', formData);
-  
-      if (response.status !== 200) {
+
+      if (response.status !== 200)
         throw new Error('Failed to save data.');
-      }
-  
-      // Reset the form
+
       setFormData({
         name: '',
         streetAddress: '',
@@ -39,13 +34,12 @@ function MyForm() {
         city: '',
         country: ''
       });
-  
+
       alert('Data saved successfully!');
     } catch (error) {
       alert(error.message);
     }
   };
-
     return (
         <main className='myform'>
             <div class="wrapper">
