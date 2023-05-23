@@ -174,8 +174,6 @@ label a {
     flex-direction: column;
 }
 
-
-
 .top-section {
     background: linear-gradient(135deg, #f4583a 0%, #cd1e38 100%);
 }
@@ -189,10 +187,12 @@ label a {
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .section p,
 .section a {
+    margin-top: 10px;
     font-weight: 700;
     letter-spacing: 7px;
     text-transform: uppercase;
