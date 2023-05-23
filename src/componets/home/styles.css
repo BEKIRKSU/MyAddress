@@ -4,7 +4,7 @@
 body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
-    background-color: #d4fef2;
+    background-color: #ffffff;
     background-size: 100% 200%;
     background-position: center top;
     max-width: 1000px;
@@ -47,7 +47,7 @@ label .hamburger {
     left: 80px;
     width: 30px;
     height: 2px;
-    background: #d4fef2;
+    background: #ffffff;
     display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -64,7 +64,7 @@ label .hamburger:before {
     display: block;
     width: 100%;
     height: 100%;
-    background: #d4fef2;
+    background: #ffffff;
 }
 
 label .hamburger:before {
@@ -125,7 +125,7 @@ label a {
     margin-bottom: 1em;
     display: block;
     /* color: #d4fef2; */
-    color: #f7f7f7;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -179,7 +179,7 @@ label a {
 }
 
 .bottom-section {
-    background: #d4fef2;
+    background: #ffffff;
 }
 
 .section h1 {
