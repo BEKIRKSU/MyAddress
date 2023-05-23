@@ -47,7 +47,7 @@ label .hamburger {
     left: 80px;
     width: 30px;
     height: 2px;
-    background: #ffffff;
+    background: #ff0000;
     display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -64,7 +64,7 @@ label .hamburger:before {
     display: block;
     width: 100%;
     height: 100%;
-    background: #ffffff;
+    background: #ff0000;
 }
 
 label .hamburger:before {
