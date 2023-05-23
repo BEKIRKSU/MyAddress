@@ -37,7 +37,7 @@ label .menu {
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #062930, 0 0 0 0 #062930;
+    box-shadow: 0 0 0 0 #00257d, 0 0 0 0 #00257d;
     cursor: pointer;
 }
 
