@@ -30,7 +30,7 @@ function Home() {
             <div className="content-center">
               <h1>My-Address</h1>
               <p>
-                My
+                My-
                 <a href="http://finestpixels.com/" target="_blank" rel="noreferrer">Privacy</a>
 
               </p>
