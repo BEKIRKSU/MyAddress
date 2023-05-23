@@ -33,11 +33,11 @@ label .menu {
     z-index: 100;
     width: 200px;
     height: 200px;
-    background: #222;
+    background: #00247d;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #222, 0 0 0 0 #222;
+    box-shadow: 0 0 0 0 #00247d, 0 0 0 0 #00247d;
     cursor: pointer;
 }
 
@@ -82,7 +82,7 @@ label input {
 }
 
 label input:checked+.menu {
-    box-shadow: 0 0 0 100vw #222, 0 0 0 100vh #222;
+    box-shadow: 0 0 0 100vw #00247d, 0 0 0 100vh #00247d;
     border-radius: 0;
 
 }
@@ -204,7 +204,7 @@ label a {
 
 .content-theme-dark h1 {
     color: #E33E39;
-    text-shadow: 0 20px 40px #222(0, 0, 0, .5);
+    text-shadow: 0 20px 40px #00247d(0, 0, 0, .5);
 }
 
 .content-theme-dark p,
@@ -213,8 +213,8 @@ label a {
 }
 
 .content-theme-light h1 {
-    color: #062930;
-    text-shadow: 0 10px 40px #222(0, 0, 0, .5);
+    color: #00247d;
+    text-shadow: 0 10px 40px #00247d(0, 0, 0, .5);
 }
 
 .content-theme-light p,
@@ -227,7 +227,7 @@ label a {
     font-size: 10px;
    font-weight: 700 ;
 font-family: 'Raleway', sans-serif;
-    text-shadow: 0 10px 40px #222(2, 2, 2, .9);
+    text-shadow: 0 10px 40px #00247d(2, 2, 2, .9);
    margin-right: 300px;
 
 }
